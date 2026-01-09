@@ -1,0 +1,82 @@
+{
+  "realm": "deskreserve",
+  "enabled": true,
+  "displayName": "DeskReserve",
+  "roles": {
+    "realm": [
+      {
+        "name": "ADMIN",
+        "description": "Admin role"
+      },
+      {
+        "name": "USER",
+        "description": "User role"
+      }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "deskreserve-cli",
+      "name": "DeskReserve CLI",
+      "enabled": true,
+      "publicClient": true,
+      "protocol": "openid-connect",
+      "directAccessGrantsEnabled": true,
+      "standardFlowEnabled": false,
+      "implicitFlowEnabled": false,
+      "serviceAccountsEnabled": false,
+      "redirectUris": [],
+      "webOrigins": [
+        "*"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "username": "alex",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Alex",
+      "lastName": "Employee",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "alex",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "USER"
+      ]
+    },
+    {
+      "username": "admin",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Admin",
+      "lastName": "User",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "admin",
+          "temporary": false
+        }
+      ],
+      "realmRoles": [
+        "ADMIN"
+      ]
+    }
+  ],
+  "defaultDefaultClientScopes": [
+    "profile",
+    "email",
+    "roles",
+    "web-origins"
+  ],
+  "defaultOptionalClientScopes": [
+    "address",
+    "phone",
+    "offline_access",
+    "microprofile-jwt"
+  ]
+}

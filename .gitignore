@@ -1,1 +1,11 @@
 .idea/
+
+# Maven / Java
+target/
+*.class
+*.log
+
+# IntelliJ / macOS
+.idea/
+*.iml
+.DS_Store
