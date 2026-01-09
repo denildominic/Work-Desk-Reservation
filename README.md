@@ -140,7 +140,3 @@ Notification service:
 
 ---
 
-## Notes
-- This is intentionally kept small and “run-it-now”.
-- The services demonstrate the core patterns (REST + DB + OAuth2 + Kafka events).
-- If you want, tell me which microservices you want (e.g., user service, attendance policy service, admin portal) and I can expand this repo.
